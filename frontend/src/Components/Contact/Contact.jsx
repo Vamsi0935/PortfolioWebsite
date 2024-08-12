@@ -88,6 +88,7 @@ const Contact = () => {
                 placeholder="Enter your full name"
                 value={formData.name}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
@@ -101,6 +102,7 @@ const Contact = () => {
                 placeholder="Enter your email address"
                 value={formData.email}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
