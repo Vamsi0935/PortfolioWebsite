@@ -5,12 +5,17 @@ import { ContextAPI } from "../../utils/context";
 const HeroSection = () => {
   const { setRef } = useContext(ContextAPI);
   return (
-    <section className="hero-container" style={{ textAlign: "center" }} ref={setRef('Home')}>
+    <section
+      className="hero-container"
+      style={{ textAlign: "center" }}
+      ref={setRef("Home")}
+    >
       <div className="hero-content">
         <img
           src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png"
           alt="vamsikrishnapic"
           width={"27%"}
+          style={{ borderRadius: "100%" }}
         />
         <h1>
           Hello I'm{" "}
