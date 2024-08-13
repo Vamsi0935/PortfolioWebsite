@@ -16,11 +16,7 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(
-    "mongodb+srv://dvkrishna142000:S5D9MfV5BvgMRdB3@cluster0.pnf94ly.mongodb.net/MERNProject?retryWrites=true&w=majority&appName=Cluster0",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    "mongodb+srv://dvkrishna142000:S5D9MfV5BvgMRdB3@cluster0.pnf94ly.mongodb.net/MERNProject?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => console.log("MongoDB connected....."))
   .catch((err) => console.error("MongoDB connection error:", err));
