@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, "client/build")));
 app.use(
   cors({
     origin: ["http://localhost:3000"],
@@ -22,6 +23,9 @@ mongoose
   .catch((err) => console.error("MongoDB connection error:", err));
 
 app.use("/api/contact", require("./routes/contact.route.js"));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
