@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://portfolio-website-six-mocha.vercel.app"],
+    origin: ["http://localhost:3000"],
     methods: ["POST"],
     credentials: true,
   })
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(
-    "mongodb+srv://dvkrishna142000:S5D9MfV5BvgMRdB3@cluster0.pnf94ly.mongodb.net/MERNProject?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://dvkrishna142000:xLWiYvemiHhkN6X2@cluster0.xleo0.mongodb.net/Portfolio?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => console.log("MongoDB connected....."))
   .catch((err) => console.error("MongoDB connection error:", err));
@@ -37,3 +37,4 @@ app.use((err, req, res, next) => {
 app.listen(5000, () => {
   console.log(`Server is running.....`);
 });
+
