@@ -6,7 +6,7 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "frontend/build")));
 app.use(
   cors({
     origin: ["http://localhost:3000"],
@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/contact", require("./routes/contact.route.js"));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
 });
 
 app.use((err, req, res, next) => {
