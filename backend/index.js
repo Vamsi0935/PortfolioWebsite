@@ -22,6 +22,9 @@ mongoose
   )
   .then(() => console.log("MongoDB connected....."))
   .catch((err) => console.error("MongoDB connection error:", err));
+app.get("/", (req, res) => {
+  res.json("Hello..");
+});
 
 app.use("/api/contact", require("./routes/contact.route.js"));
 app.get("*", (req, res) => {
