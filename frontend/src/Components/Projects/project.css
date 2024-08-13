@@ -65,3 +65,57 @@
 .project-readmore p {
     margin: 0;
 }
+
+@media (max-width: 1200px) {
+    .project-format {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-format {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .project-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-format h2 {
+        font-size: 1.25rem;
+    }
+
+    .project-format h3 {
+        font-size: 1rem;
+    }
+
+    .project-format p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title h1 {
+        font-size: 1.25rem;
+    }
+
+    .project-format h2 {
+        font-size: 1rem;
+    }
+
+    .project-format h3 {
+        font-size: 0.875rem;
+    }
+
+    .project-format p {
+        font-size: 0.75rem;
+    }
+
+    .project-readmore {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}

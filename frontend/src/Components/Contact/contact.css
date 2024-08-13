@@ -89,3 +89,68 @@ textarea.form-control {
 p {
     margin: 0;
 }
+
+@media (max-width: 599px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content>div {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .contact-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        flex-direction: row;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-content {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-content {
+        max-width: 1200px;
+    }
+
+    .contact-header h1 {
+        font-size: 3rem;
+    }
+}

@@ -88,3 +88,74 @@ hr {
 .footer-bottom-right p:hover {
     color: #0056b3;
 }
+
+@media (max-width: 599px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-top-left {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-email-input input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom-left {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .footer-top {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer-email-input input {
+        width: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer-top-left,
+    .footer-top-right {
+        padding-right: 30px;
+    }
+
+    .footer-email-input input {
+        width: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-top {
+        max-width: 960px;
+    }
+
+    .footer-email-input input {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-top {
+        max-width: 1200px;
+    }
+}

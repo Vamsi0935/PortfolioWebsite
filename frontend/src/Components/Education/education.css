@@ -17,8 +17,8 @@
 
 .education-container {
     display: flex;
-    justify-content: center; 
-    gap: 2rem; 
+    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
     max-width: 100%;
 }
@@ -46,7 +46,8 @@
     margin-bottom: 1rem;
 }
 
-.education-name, .education-level {
+.education-name,
+.education-level {
     margin: 0;
     font-size: 1.25rem;
 }
@@ -57,4 +58,110 @@
 
 .education-level {
     color: #555;
+}
+
+@media (max-width: 599px) {
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-section {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .education-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .education-section i {
+        font-size: 2.5rem;
+    }
+
+    .education-name,
+    .education-level {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .education-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .education-section i {
+        font-size: 2.75rem;
+    }
+
+    .education-name,
+    .education-level {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .education-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .education-title h1 {
+        font-size: 2rem;
+    }
+
+    .education-section {
+        width: 280px;
+    }
+
+    .education-section i {
+        font-size: 3rem;
+    }
+
+    .education-name,
+    .education-level {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .education-container {
+        max-width: 900px;
+    }
+
+    .education-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .education-section {
+        width: 300px;
+    }
+
+    .education-section i {
+        font-size: 3.25rem;
+    }
+
+    .education-name,
+    .education-level {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .education-container {
+        max-width: 1200px;
+    }
+
+    .education-title h1 {
+        font-size: 3rem;
+    }
+
+    .education-section i {
+        font-size: 3.5rem;
+    }
+
+    .education-name,
+    .education-level {
+        font-size: 1.4rem;
+    }
 }

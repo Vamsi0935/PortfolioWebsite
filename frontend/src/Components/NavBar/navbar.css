@@ -70,11 +70,86 @@
     outline: 1.5px solid transparent;
     border-radius: 0.2rem;
     cursor: pointer;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
     color: #a993fe;
     background: #000;
     outline: 1.5px solid #a993fe;
+}
+
+@media (max-width: 599px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+
+    .nav-content ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .nav-content li {
+        margin: 0;
+    }
+
+    .contact-btn {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav-content {
+        flex-direction: row;
+    }
+
+    .nav-content ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contact-btn {
+        padding: 0.6rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-content {
+        justify-content: space-between;
+    }
+
+    .nav-content ul {
+        gap: 1.5rem;
+    }
+
+    .contact-btn {
+        padding: 0.6rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-content {
+        max-width: 1300px;
+    }
+
+    .nav-content ul {
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-content {
+        max-width: 1300px;
+    }
+
+    .nav-content ul {
+        gap: 2rem;
+    }
 }
