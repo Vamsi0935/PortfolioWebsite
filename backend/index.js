@@ -21,7 +21,7 @@ mongoose
   .then(() => console.log("MongoDB connected....."))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-app.use("/api/contact", require("./routes/contact.route.js"));
+app.use("/api/user", require("./routes/contact.route.js"));
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

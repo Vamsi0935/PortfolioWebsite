@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/contact",
+        "http://localhost:5000/api/user/contact",
         formData
       );
       if (response.data.success) {
