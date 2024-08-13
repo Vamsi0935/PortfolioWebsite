@@ -28,9 +28,9 @@ const HeroSection = () => {
         </h1>
         <p style={{ fontSize: "25px", color: "white", fontWeight: "500" }}>
           A Full Stack developer is a professional responsible for working on
-          both front-end and back-end development processes.
-          <br /> They design, develop, and maintain fully-fledged and
-          functioning platforms with databases or servers.
+          both front-end and back-end development processes. They design,
+          develop, and maintain fully-fledged and functioning platforms with
+          databases or servers.
         </p>
       </div>
     </section>
