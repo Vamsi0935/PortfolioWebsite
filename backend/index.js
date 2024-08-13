@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://portfolio-website-six-mocha.vercel.app"],
     methods: ["POST"],
     credentials: true,
   })
@@ -20,9 +20,6 @@ mongoose
   )
   .then(() => console.log("MongoDB connected....."))
   .catch((err) => console.error("MongoDB connection error:", err));
-app.get("/", (req, res) => {
-  res.json("Hello..");
-});
 
 app.use("/api/contact", require("./routes/contact.route.js"));
 
