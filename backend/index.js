@@ -5,25 +5,27 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+    methods: ["POST"],
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 
 mongoose
   .connect(
-    "mongodb+srv://dvkrishna142000:S5D9MfV5BvgMRdB3@cluster0.pnf94ly.mongodb.net/MERNProject?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://dvkrishna142000:S5D9MfV5BvgMRdB3@cluster0.pnf94ly.mongodb.net/MERNProject?retryWrites=true&w=majority&appName=Cluster0",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
   )
-  .then(() => {
-    console.log("MongoDB connected.....");
-  })
-  .catch((err) => {
-    console.error("MongoDB connection error:", err);
-  });
+  .then(() => console.log("MongoDB connected....."))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 app.use("/api/contact", require("./routes/contact.route.js"));
-
-app.listen(5000, () => {
-  console.log(`Server is running.....`);
-});
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
@@ -34,4 +36,8 @@ app.use((err, req, res, next) => {
     statusCode,
     message,
   });
+});
+
+app.listen(5000, () => {
+  console.log(`Server is running.....`);
 });

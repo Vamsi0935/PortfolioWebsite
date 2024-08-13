@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
 
     await newContact.save();
 
-    res.json({ success: true });
+    res.status(201).json({ success: true, message: "Message received" });
   } catch (error) {
     console.error("Error saving contact message:", error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
