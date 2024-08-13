@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://portfolio-website-six-mocha.vercel.app"],
     methods: ["POST"],
     credentials: true,
   })
