@@ -7,7 +7,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://portfolio-website-ashy-alpha.vercel.app"],
+    origin: [
+      "https://portfolio-website-ashy-alpha.vercel.app",
+      "http://locahost:3000",
+    ],
     methods: ["POST"],
     credentials: true,
   })
@@ -37,4 +40,3 @@ app.use((err, req, res, next) => {
 app.listen(5000, () => {
   console.log(`Server is running.....`);
 });
-
