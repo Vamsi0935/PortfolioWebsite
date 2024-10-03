@@ -119,3 +119,17 @@
         font-size: 0.875rem;
     }
 }
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: white;
+    text-decoration: underline;
+}
