@@ -9,7 +9,7 @@ export const projects = [
       "No Link for this project, because this project make JDBC, JSP, Servlets and MySQL only....",
   },
   {
-    p_no: "02",
+    p_no: "02",   
     p_name: "E-Commerce Webiste",
     p_desc:
       "In this e-commerce website design we will create a Home page of an eCommerce website with banner section, some featured categories images, then some featured products with product price, image and rating. Then there will be more latest products, and one offer section with exclusive products. After that there will be testimonials and top brands section. At the bottom of the website we will make a footer with 4 columns.",
