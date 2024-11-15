@@ -43,7 +43,7 @@ export const projects = [
       "No link for this project, because this website make only HTML, CSS",
   },
   {
-    p_no: "06",
+    p_no: "06", 
     p_name: "Shopping Cart by using JavaScript",
     p_desc:
       "This shopping page provides users with an intuitive way to browse products through a search bar and category filters. The implementation focuses on enhancing user experience by enabling efficient product discovery.",
