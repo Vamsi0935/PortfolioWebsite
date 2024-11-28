@@ -49,13 +49,5 @@ export const projects = [
       "This shopping page provides users with an intuitive way to browse products through a search bar and category filters. The implementation focuses on enhancing user experience by enabling efficient product discovery.",
     p_github_link: "https://github.com/Vamsi0935/JSShoppingCart",
     p_live_link: "https://js-shopping-cart-xi.vercel.app",
-  },
-  {
-    p_no: "07",
-    p_name: "Responsive Expense Tracker by using MERN Stack",
-    p_desc:
-      "A full-stack expense tracking application built with the MERN stack. This app enables users to easily track their expenses, savings,investments, and visualize spending patterns in a user-friendly interface.",
-    p_github_link: "https://github.com/Vamsi0935/Expense-Tracker",
-    p_live_link: "https://expense-tracker-sand-three.vercel.app",
-  },
+  }
 ];
