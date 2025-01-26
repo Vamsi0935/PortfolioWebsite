@@ -8,7 +8,6 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://portfolio-website-ashy-alpha.vercel.app",
       "http://locahost:3000",
     ],
     methods: ["POST"],
