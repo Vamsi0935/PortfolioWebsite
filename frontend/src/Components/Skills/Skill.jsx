@@ -8,7 +8,7 @@ const Skill = () => {
     <div className="skills" ref={setRef("Skills")}>
       <div className="skills-title">
         <h1>
-          Skills <hr style={{ width: "85%" }} />
+          Skills <hr />
         </h1>
       </div>
       <div className="about-skills">

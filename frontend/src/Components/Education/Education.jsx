@@ -8,7 +8,7 @@ const Education = () => {
     <div className="education" ref={setRef('Education')}>
       <div className="education-title">
         <h1>
-          Education <hr style={{ width: "85%" }} />
+          Education <hr />
         </h1>
       </div>
       <div className="education-container">
@@ -24,8 +24,8 @@ const Education = () => {
         </div>
         <div className="education-section">
           <i className="fa-solid fa-certificate"></i>
-          <p className="education-name">Certification</p>
-          <p className="education-level">Java Full Stack Development</p>
+          <p className="education-name">Certifications</p>
+          <p className="education-level">Java Full Stack and Traineeship Program in Numetry Technologies</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./herosection.css";
 import { ContextAPI } from "../../utils/context";
+import VamsiKrishnaD from "../../asserts/Images/VamsiKrishnaD.jpeg";
 
 const HeroSection = () => {
   const { setRef } = useContext(ContextAPI);
@@ -12,10 +13,10 @@ const HeroSection = () => {
     >
       <div className="hero-content">
         <img
-          src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png"
+          src={VamsiKrishnaD}
           alt="vamsikrishnapic"
-          width={"27%"}
-          style={{ borderRadius: "100%" }}
+          // width={"50%"}
+          // style={{ borderRadius: "50%" }}
         />
         <h1>
           Hello I'm{" "}

@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Context>
       <NavBar />
-      <div className="conatiner">
+      <div className="container">
         <HeroSection />
         <About />
         <Education />

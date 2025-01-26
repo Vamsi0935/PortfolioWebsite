@@ -1,3 +1,7 @@
+* {
+    border: 0px solid white;
+}
+
 .nav-wrapper {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0;
@@ -9,9 +13,6 @@
 
 .nav-content {
     max-width: 1300px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     padding: 1rem 0;
     margin: 0 auto;
 }
@@ -19,9 +20,9 @@
 .nav-content ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -31,7 +32,7 @@
 
 .menu-items {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 500;
     color: #fff;
     position: relative;
@@ -87,6 +88,7 @@
     }
 
     .nav-content ul {
+        display: none;
         flex-direction: column;
         gap: 0.5rem;
         align-items: flex-start;
@@ -96,10 +98,40 @@
         margin: 0;
     }
 
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger svg {
+        color: white;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger.open svg {
+        transform: rotate(90deg);
+    }
+
+    .hamburger:hover svg {
+        transform: rotate(90deg);
+    }
+
+    .menu-items {
+        font-size: 1rem;
+    }
+
     .contact-btn {
         margin-top: 0.5rem;
         padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .menu.open {
+        display: flex;
     }
 }
 
@@ -109,8 +141,14 @@
     }
 
     .nav-content ul {
+        display: flex;
         flex-direction: row;
         gap: 1rem;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
     }
 
     .contact-btn {

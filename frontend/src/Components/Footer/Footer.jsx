@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="footer-subscribe">Subscribe</div>
         </div>
       </div>
-      <hr />
+      {/* <hr /> */}
       <div className="footer-bottom">
         <p className="footer-bottom-left">&#169; 2024 Vamsi Krishna D. All rights are reserved</p>
         <div className="footer-bottom-right">
