@@ -13,4 +13,13 @@ router.post("/contact", async (req, res) => {
   }
 });
 
+router.get("/", async (req, res) => {
+  try {
+    const contacts = await Contact.find();
+    res.json({ success: true, data: contacts });
+  } catch (error) {
+    res.status(500).json({ success: false, message: "Internal Server Error" });
+  }
+});
+
 module.exports = router;
