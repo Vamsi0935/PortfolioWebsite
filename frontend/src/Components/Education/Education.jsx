@@ -19,7 +19,7 @@ const Education = () => {
         </div>
         <div className="education-section">
           <i className="fa-solid fa-university"></i>
-          <p className="education-name">Sir C R Reddy College of Engineering</p>
+          <p className="education-name">Sir C R Reddy College of Engineering, Eluru, Andhra Pradesh</p>
           <p className="education-level">Graduated: 2023</p>
         </div>
         <div className="education-section">
