@@ -9,6 +9,7 @@ app.use(
   cors({
     origin: [
       "http://locahost:3000",
+      "https://portfolio-website-otid-frontend.vercel.app",
     ],
     methods: ["POST"],
     credentials: true,

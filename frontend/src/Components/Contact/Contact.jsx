@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/contact",
+        "https://portfolio-website-r4jp-api.vercel.app/api/user/contact",
         formData
       );
       if (response.data.success) {
