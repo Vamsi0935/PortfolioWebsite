@@ -9,7 +9,7 @@ export const projects = [
       "No Link for this project, because this project make JDBC, JSP, Servlets and MySQL only....",
   },
   {
-    p_no: "02",   
+    p_no: "02",
     p_name: "E-Commerce Webiste",
     p_desc:
       "In this e-commerce website design we will create a Home page of an eCommerce website with banner section, some featured categories images, then some featured products with product price, image and rating. Then there will be more latest products, and one offer section with exclusive products. After that there will be testimonials and top brands section. At the bottom of the website we will make a footer with 4 columns.",
@@ -43,7 +43,7 @@ export const projects = [
       "No link for this project, because this website make only HTML, CSS",
   },
   {
-    p_no: "06", 
+    p_no: "06",
     p_name: "Shopping Cart by using JavaScript",
     p_desc:
       "This shopping page provides users with an intuitive way to browse products through a search bar and category filters. The implementation focuses on enhancing user experience by enabling efficient product discovery.",
@@ -59,3 +59,61 @@ export const projects = [
     p_live_link: "https://expense-tracker-sand-three.vercel.app",
   },
 ];
+
+export const skillsIcons = [
+  {
+    skill_no: "01",
+    skill_icon: "https://cdn.iconscout.com/icon/free/png-256/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png",
+    skill_name: "HTML5",
+  },
+  {
+    skill_no: "02",
+    skill_icon: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+    skill_name: "CSS",
+  },
+  {
+    skill_no: "03",
+    skill_icon: "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png",
+    skill_name: "JavaScript",
+  },
+  {
+    skill_no: "04",
+    skill_icon: "https://goldeneagle.ai/static/images/technology/react.png",
+    skill_name: "ReactJs",
+  },
+  {
+    skill_no: "05",
+    skill_icon: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png",
+    skill_name: "ExpressJS",
+  },
+  {
+    skill_no: "06",
+    skill_icon: "https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png?f=webp&w=256",
+    skill_name: "NodeJS",
+  },
+  {
+    skill_no: "07",
+    skill_icon: "https://www.svgrepo.com/show/331488/mongodb.svg",
+    skill_name: "MongoDB",
+  },
+  {
+    skill_no: "08",
+    skill_icon: "https://www.svgrepo.com/show/303388/java-4-logo.svg",
+    skill_name: "Java",
+  },
+  {
+    skill_no: "09",
+    skill_icon: "https://www.edureka.co/blog/wp-content/uploads/2019/08/Hibernate-Java-frameworks-Edureka.png",
+    skill_name: "Hibernate",
+  },
+  {
+    skill_no: "10",
+    skill_icon: "https://testrigor.com/wp-content/uploads/2023/12/spring-boot.png",
+    skill_name: "Spring Boot",
+  },
+  {
+    skill_no: "11",
+    skill_icon: "https://brandlogo.org/wp-content/uploads/2024/02/MySQL-Logo-300x300.png.webp",
+    skill_name: "MySQL",
+  }
+]

@@ -15,29 +15,47 @@
     position: relative;
 }
 
-.about-skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 600px;
-}
-
 .about-skill {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     width: 100%;
+    max-width: 100%;
 }
 
-.about-skill p {
-    font-size: 1.25rem;
-    font-weight: 500;
+.skills-format {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+.skills-format img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 60px;
+    padding: 15%;
+    transition: transform 0.5s ease;
+}
+
+.skills-format img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.skills-format p {
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
-    flex: 1;
-    text-align: left;
 }
 
 .about-skill hr {
@@ -48,7 +66,6 @@
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
 }
 
-
 @media (max-width: 1024px) {
     .skills-title h1 {
         font-size: 1.75rem;
@@ -56,6 +73,10 @@
 
     .about-skill p {
         font-size: 1rem;
+    }
+
+    .about-skill {
+        gap: 10px;
     }
 }
 
@@ -68,23 +89,21 @@
         font-size: 1.5rem;
     }
 
-    .about-skills {
-        max-width: 100%;
-    }
-
     .about-skill {
-        flex-direction: column;
-        align-items: flex-start;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .about-skill p {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+    .skills-format {
+        width: 120px;
+        height: 120px;
     }
 
-    .about-skill hr {
-        width: 100%;
-        height: 6px;
+    .skills-format img {
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -97,11 +116,27 @@
         font-size: 1.25rem;
     }
 
-    .about-skill p {
-        font-size: 0.875rem;
+    .about-skill {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .skills-format {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-format img {
+        width: 100px;
+        height: 100px;
     }
 
     .about-skill hr {
         height: 4px;
+    }
+
+    .about-skill p {
+        font-size: 0.875rem;
     }
 }

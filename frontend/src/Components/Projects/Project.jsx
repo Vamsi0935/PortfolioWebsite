@@ -11,7 +11,7 @@ const Project = () => {
         <h1>My Projects</h1>
       </div>
       <div className="project-container">
-        {projects.length > 0 ? (
+        {projects.length > 0 ? ( 
           projects.map((project) => (
             <div key={project.p_no} className="project-format">
               <h3>{project.p_no}</h3>

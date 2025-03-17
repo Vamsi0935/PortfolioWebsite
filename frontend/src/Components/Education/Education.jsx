@@ -8,7 +8,7 @@ const Education = () => {
     <div className="education" ref={setRef('Education')}>
       <div className="education-title">
         <h1>
-          Education <hr />
+          Education
         </h1>
       </div>
       <div className="education-container">

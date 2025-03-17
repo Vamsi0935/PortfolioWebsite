@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 import "./navbar.css";
 import { ContextAPI } from "../../utils/context";
-import { FaBars } from "react-icons/fa"; // Hamburger icon from react-icons
+import { FaBars } from "react-icons/fa";
+import resume from "../../asserts/resume/Vamsi Krishna D.pdf"
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,21 +16,25 @@ const NavBar = () => {
   return (
     <nav className="nav-wrapper">
       <div className="nav-content">
-        {/* Hamburger Icon for small screens */}
         <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <FaBars size={30} />
         </div>
 
-        {/* Navigation menu */}
         <ul className={menuOpen ? "menu open" : "menu"}>
           {items.map((item) => (
             <li onClick={() => scrollToRef(item)} key={item}>
               <a className="menu-items">{item}</a>
             </li>
           ))}
-          <button className="contact-btn" onClick={() => scrollToRef("Hire Me")}>
-            Hire Me
-          </button>
+          <li key="download-resume">
+            <a
+              className="contact-btn text-decoration-none resume-link"
+              href={resume}
+              download="Vamsi Krishna Dudyala_Resume.pdf"
+            >
+              Hire me
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
